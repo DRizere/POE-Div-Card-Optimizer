@@ -1,0 +1,1096 @@
+[
+  [
+    {
+      "mapName": "MapWorldsMaze",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7996298,
+      "totalWeightOfCards": 41545
+    },
+    {
+      "mapName": "MapWorldsDefiledCathedral",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7988356,
+      "totalWeightOfCards": 33603
+    },
+    {
+      "mapName": "MapWorldsBurialChambers",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7994002,
+      "totalWeightOfCards": 39249
+    },
+    {
+      "mapName": "MapWorldsPhantasmagoria",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7989264,
+      "totalWeightOfCards": 34511
+    },
+    {
+      "mapName": "MapWorldsShrine",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984011,
+      "totalWeightOfCards": 29258
+    },
+    {
+      "mapName": "MapWorldsCells",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7988305,
+      "totalWeightOfCards": 33552
+    },
+    {
+      "mapName": "MapWorldsCemetery",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984368,
+      "totalWeightOfCards": 29615
+    },
+    {
+      "mapName": "MapWorldsTropicalIsland",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7997910,
+      "totalWeightOfCards": 43157
+    },
+    {
+      "mapName": "MapWorldsArsenal",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8010616,
+      "totalWeightOfCards": 55863
+    },
+    {
+      "mapName": "MapWorldsResidence",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7990273,
+      "totalWeightOfCards": 35520
+    },
+    {
+      "mapName": "MapWorldsMoonTemple",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7976237,
+      "totalWeightOfCards": 21484
+    },
+    {
+      "mapName": "MapWorldsOvergrownShrine",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7983150,
+      "totalWeightOfCards": 28397
+    },
+    {
+      "mapName": "MapWorldsHarbingerUber",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7955201,
+      "totalWeightOfCards": 448
+    },
+    {
+      "mapName": "MapWorldsHarbingerMid",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7955201,
+      "totalWeightOfCards": 448
+    },
+    {
+      "mapName": "MapWorldsHarbingerHigh",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7955201,
+      "totalWeightOfCards": 448
+    },
+    {
+      "mapName": "MapWorldsGrotto",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8044808,
+      "totalWeightOfCards": 90055
+    },
+    {
+      "mapName": "MapWorldsWharf",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8014536,
+      "totalWeightOfCards": 59783
+    },
+    {
+      "mapName": "MapWorldsLair",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8009950,
+      "totalWeightOfCards": 55197
+    },
+    {
+      "mapName": "MapWorldsBarrows",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8002722,
+      "totalWeightOfCards": 47969
+    },
+    {
+      "mapName": "MapWorldsBelfry",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970412,
+      "totalWeightOfCards": 15659
+    },
+    {
+      "mapName": "MapWorldsLavaLake",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7976786,
+      "totalWeightOfCards": 22033
+    },
+    {
+      "mapName": "MapWorldsPier",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8003171,
+      "totalWeightOfCards": 48418
+    },
+    {
+      "mapName": "MapWorldsPort",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8022585,
+      "totalWeightOfCards": 67832
+    },
+    {
+      "mapName": "MapWorldsShipyard",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7993187,
+      "totalWeightOfCards": 38434
+    },
+    {
+      "mapName": "MapWorldsChimera",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8029287,
+      "totalWeightOfCards": 74534
+    },
+    {
+      "mapName": "MapWorldsPit",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8028589,
+      "totalWeightOfCards": 73836
+    },
+    {
+      "mapName": "MapWorldsArena",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8052142,
+      "totalWeightOfCards": 97389
+    },
+    {
+      "mapName": "MapWorldsColosseum",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8040489,
+      "totalWeightOfCards": 85736
+    },
+    {
+      "mapName": "MapWorldsDesertSpring",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7982238,
+      "totalWeightOfCards": 27485
+    },
+    {
+      "mapName": "MapWorldsDrySea",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7982238,
+      "totalWeightOfCards": 27485
+    },
+    {
+      "mapName": "MapWorldsDesert",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7982208,
+      "totalWeightOfCards": 27455
+    },
+    {
+      "mapName": "MapWorldsDunes",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7983162,
+      "totalWeightOfCards": 28409
+    },
+    {
+      "mapName": "MapWorldsGeode",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7997202,
+      "totalWeightOfCards": 42449
+    },
+    {
+      "mapName": "MapWorldsFloodedMine",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8013621,
+      "totalWeightOfCards": 58868
+    },
+    {
+      "mapName": "MapWorldsOrchard",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8051019,
+      "totalWeightOfCards": 96266
+    },
+    {
+      "mapName": "MapWorldsPeninsula",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8016299,
+      "totalWeightOfCards": 61546
+    },
+    {
+      "mapName": "MapWorldsForbiddenWoods",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8003803,
+      "totalWeightOfCards": 49050
+    },
+    {
+      "mapName": "MapWorldsBrambleValley",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7985101,
+      "totalWeightOfCards": 30348
+    },
+    {
+      "mapName": "MapWorldsDarkForest",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7991424,
+      "totalWeightOfCards": 36671
+    },
+    {
+      "mapName": "MapWorldsBoneCrypt",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7982632,
+      "totalWeightOfCards": 27879
+    },
+    {
+      "mapName": "MapWorldsRelicChambers",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984730,
+      "totalWeightOfCards": 29977
+    },
+    {
+      "mapName": "MapWorldsCoves",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7999474,
+      "totalWeightOfCards": 44721
+    },
+    {
+      "mapName": "MapWorldsVault",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7990168,
+      "totalWeightOfCards": 35415
+    },
+    {
+      "mapName": "MapWorldsDig",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7992528,
+      "totalWeightOfCards": 37775
+    },
+    {
+      "mapName": "MapWorldsCrystalOre",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8018114,
+      "totalWeightOfCards": 63361
+    },
+    {
+      "mapName": "MapWorldsExcavation",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7990736,
+      "totalWeightOfCards": 35983
+    },
+    {
+      "mapName": "MapWorldsCourtyard",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8059369,
+      "totalWeightOfCards": 104616
+    },
+    {
+      "mapName": "MapWorldsGardens",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8022314,
+      "totalWeightOfCards": 67561
+    },
+    {
+      "mapName": "MapWorldsTerrace",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8023539,
+      "totalWeightOfCards": 68786
+    },
+    {
+      "mapName": "MapWorldsPlaza",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7974776,
+      "totalWeightOfCards": 20023
+    },
+    {
+      "mapName": "MapWorldsSepulchre",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7986309,
+      "totalWeightOfCards": 31556
+    },
+    {
+      "mapName": "MapWorldsMausoleum",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7967869,
+      "totalWeightOfCards": 13116
+    },
+    {
+      "mapName": "MapWorldsWaterways",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7968725,
+      "totalWeightOfCards": 13972
+    },
+    {
+      "mapName": "MapWorldsFields",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8123257,
+      "totalWeightOfCards": 168504
+    },
+    {
+      "mapName": "MapWorldsAshenWood",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984744,
+      "totalWeightOfCards": 29991
+    },
+    {
+      "mapName": "MapWorldsCursedCrypt",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7972790,
+      "totalWeightOfCards": 18037
+    },
+    {
+      "mapName": "MapWorldsPhoenix",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7969684,
+      "totalWeightOfCards": 14931
+    },
+    {
+      "mapName": "MapWorldsSulphurVents",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970265,
+      "totalWeightOfCards": 15512
+    },
+    {
+      "mapName": "MapWorldsMuseum",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8068435,
+      "totalWeightOfCards": 113682
+    },
+    {
+      "mapName": "MapWorldsStrand",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8016691,
+      "totalWeightOfCards": 61938
+    },
+    {
+      "mapName": "MapWorldsCoralRuins",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7993264,
+      "totalWeightOfCards": 38511
+    },
+    {
+      "mapName": "MapWorldsReef",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7996428,
+      "totalWeightOfCards": 41675
+    },
+    {
+      "mapName": "MapWorldsFoundry",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7963518,
+      "totalWeightOfCards": 8765
+    },
+    {
+      "mapName": "MapWorldsCastleRuins",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8109000,
+      "totalWeightOfCards": 154247
+    },
+    {
+      "mapName": "MapWorldsPalace",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7979164,
+      "totalWeightOfCards": 24411
+    },
+    {
+      "mapName": "MapWorldsUndergroundRiver",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7963203,
+      "totalWeightOfCards": 8450
+    },
+    {
+      "mapName": "MapWorldsElderArena",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7954753,
+      "totalWeightOfCards": 0
+    },
+    {
+      "mapName": "MapWorldsCrimsonTemple",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8000539,
+      "totalWeightOfCards": 45786
+    },
+    {
+      "mapName": "MapWorldsLeyline",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973552,
+      "totalWeightOfCards": 18799
+    },
+    {
+      "mapName": "MapWorldsElderArenaUber",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7964828,
+      "totalWeightOfCards": 10075
+    },
+    {
+      "mapName": "MapWorldsGorge",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7974990,
+      "totalWeightOfCards": 20237
+    },
+    {
+      "mapName": "MapWorldsNecropolis",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7971879,
+      "totalWeightOfCards": 17126
+    },
+    {
+      "mapName": "MapWorldsToxicSewer",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973861,
+      "totalWeightOfCards": 19108
+    },
+    {
+      "mapName": "MapWorldsSummit",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7978034,
+      "totalWeightOfCards": 23281
+    },
+    {
+      "mapName": "MapWorldsUndergroundSea",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8063088,
+      "totalWeightOfCards": 108335
+    },
+    {
+      "mapName": "MapWorldsWasteland",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7962260,
+      "totalWeightOfCards": 7507
+    },
+    {
+      "mapName": "MapWorldsFrozenCabins",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7971594,
+      "totalWeightOfCards": 16841
+    },
+    {
+      "mapName": "MapWorldsHydra",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7964390,
+      "totalWeightOfCards": 9637
+    },
+    {
+      "mapName": "MapWorldsDungeon",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7988144,
+      "totalWeightOfCards": 33391
+    },
+    {
+      "mapName": "MapWorldsSunkenCity",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973030,
+      "totalWeightOfCards": 18277
+    },
+    {
+      "mapName": "MapWorldsIceberg",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7969378,
+      "totalWeightOfCards": 14625
+    },
+    {
+      "mapName": "MapWorldsCitySquare",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7998968,
+      "totalWeightOfCards": 44215
+    },
+    {
+      "mapName": "MapWorldsEstuary",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8002305,
+      "totalWeightOfCards": 47552
+    },
+    {
+      "mapName": "MapWorldsConservatory",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984689,
+      "totalWeightOfCards": 29936
+    },
+    {
+      "mapName": "MapWorldsCage",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7995118,
+      "totalWeightOfCards": 40365
+    },
+    {
+      "mapName": "MapWorldsRacecourse_",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7985813,
+      "totalWeightOfCards": 31060
+    },
+    {
+      "mapName": "MapWorldsCaldera",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970829,
+      "totalWeightOfCards": 16076
+    },
+    {
+      "mapName": "MapWorldsBazaar",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7978508,
+      "totalWeightOfCards": 23755
+    },
+    {
+      "mapName": "MapWorldsCourthouse",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7975520,
+      "totalWeightOfCards": 20767
+    },
+    {
+      "mapName": "MapWorldsCrimsonTownship",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7976185,
+      "totalWeightOfCards": 21432
+    },
+    {
+      "mapName": "MapWorldsGhetto",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7971401,
+      "totalWeightOfCards": 16648
+    },
+    {
+      "mapName": "MapWorldsColdRiver_",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7999894,
+      "totalWeightOfCards": 45141
+    },
+    {
+      "mapName": "MapWorldsSprings",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7966005,
+      "totalWeightOfCards": 11252
+    },
+    {
+      "mapName": "MapWorldsAcidLakes",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970575,
+      "totalWeightOfCards": 15822
+    },
+    {
+      "mapName": "MapWorldsWastePool",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984424,
+      "totalWeightOfCards": 29671
+    },
+    {
+      "mapName": "MapWorldsAncientCity",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7991926,
+      "totalWeightOfCards": 37173
+    },
+    {
+      "mapName": "MapWorldsAridLake",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7963485,
+      "totalWeightOfCards": 8732
+    },
+    {
+      "mapName": "MapWorldsArmoury",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7964566,
+      "totalWeightOfCards": 9813
+    },
+    {
+      "mapName": "MapWorldsChateau",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984779,
+      "totalWeightOfCards": 30026
+    },
+    {
+      "mapName": "MapWorldsPromenade",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7989480,
+      "totalWeightOfCards": 34727
+    },
+    {
+      "mapName": "MapWorldsCore",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7984837,
+      "totalWeightOfCards": 30084
+    },
+    {
+      "mapName": "MapWorldsPrimordialPool",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7968981,
+      "totalWeightOfCards": 14228
+    },
+    {
+      "mapName": "MapWorldsChannel",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7965818,
+      "totalWeightOfCards": 11065
+    },
+    {
+      "mapName": "MapWorldsArachnidTomb",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7971479,
+      "totalWeightOfCards": 16726
+    },
+    {
+      "mapName": "MapWorldsBog",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970185,
+      "totalWeightOfCards": 15432
+    },
+    {
+      "mapName": "MapWorldsRamparts",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7981967,
+      "totalWeightOfCards": 27214
+    },
+    {
+      "mapName": "MapWorldsVaalPyramid",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8010215,
+      "totalWeightOfCards": 55462
+    },
+    {
+      "mapName": "MapWorldsMalformation",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7982991,
+      "totalWeightOfCards": 28238
+    },
+    {
+      "mapName": "MapWorldsCarcass",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7972220,
+      "totalWeightOfCards": 17467
+    },
+    {
+      "mapName": "MapWorldsArachnidNest",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970137,
+      "totalWeightOfCards": 15384
+    },
+    {
+      "mapName": "MapWorldsPrecinct",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7972341,
+      "totalWeightOfCards": 17588
+    },
+    {
+      "mapName": "MapWorldsStagnation",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7983193,
+      "totalWeightOfCards": 28440
+    },
+    {
+      "mapName": "MapWorldsLookout",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7986621,
+      "totalWeightOfCards": 31868
+    },
+    {
+      "mapName": "MapWorldsMarshes",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7971410,
+      "totalWeightOfCards": 16657
+    },
+    {
+      "mapName": "MapWorldsMineralPools",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8007154,
+      "totalWeightOfCards": 52401
+    },
+    {
+      "mapName": "MapWorldsTribunal",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7969738,
+      "totalWeightOfCards": 14985
+    },
+    {
+      "mapName": "MapWorldsHauntedMansion",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8000483,
+      "totalWeightOfCards": 45730
+    },
+    {
+      "mapName": "MapWorldsSiege",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7963798,
+      "totalWeightOfCards": 9045
+    },
+    {
+      "mapName": "MapWorldsLaboratory",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7976709,
+      "totalWeightOfCards": 21956
+    },
+    {
+      "mapName": "MapWorldsVolcano",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973996,
+      "totalWeightOfCards": 19243
+    },
+    {
+      "mapName": "MapWorldsMinotaur",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7965938,
+      "totalWeightOfCards": 11185
+    },
+    {
+      "mapName": "MapWorldsThicket",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7975355,
+      "totalWeightOfCards": 20602
+    },
+    {
+      "mapName": "MapWorldsAtoll",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7995121,
+      "totalWeightOfCards": 40368
+    },
+    {
+      "mapName": "MapWorldsTower",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7994560,
+      "totalWeightOfCards": 39807
+    },
+    {
+      "mapName": "MapWorldsAcademy",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8067514,
+      "totalWeightOfCards": 112761
+    },
+    {
+      "mapName": "MapWorldsColonnade",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7988338,
+      "totalWeightOfCards": 33585
+    },
+    {
+      "mapName": "MapWorldsPlateau",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7995119,
+      "totalWeightOfCards": 40366
+    },
+    {
+      "mapName": "MapWorldsSilo",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8004128,
+      "totalWeightOfCards": 49375
+    },
+    {
+      "mapName": "MapWorldsShapersRealm",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7964828,
+      "totalWeightOfCards": 10075
+    },
+    {
+      "mapName": "MapWorldsBasilica",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7979286,
+      "totalWeightOfCards": 24533
+    },
+    {
+      "mapName": "MapWorldsCanyon",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7963485,
+      "totalWeightOfCards": 8732
+    },
+    {
+      "mapName": "MapWorldsGraveTrough",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973252,
+      "totalWeightOfCards": 18499
+    },
+    {
+      "mapName": "MapWorldsIvoryTemple",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7977483,
+      "totalWeightOfCards": 22730
+    },
+    {
+      "mapName": "MapWorldsJungleValley",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7975469,
+      "totalWeightOfCards": 20716
+    },
+    {
+      "mapName": "MapWorldsTortureChamber",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7974782,
+      "totalWeightOfCards": 20029
+    },
+    {
+      "mapName": "MapWorldsSpiderForest",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7994251,
+      "totalWeightOfCards": 39498
+    },
+    {
+      "mapName": "MapWorldsVaalTemple",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8015060,
+      "totalWeightOfCards": 60307
+    },
+    {
+      "mapName": "MapWorldsFactory",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8016867,
+      "totalWeightOfCards": 62114
+    },
+    {
+      "mapName": "MapWorldsLighthouse",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7993168,
+      "totalWeightOfCards": 38415
+    },
+    {
+      "mapName": "MapWorldsMudGeyser",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970185,
+      "totalWeightOfCards": 15432
+    },
+    {
+      "mapName": "MapWorldsForkingRiver",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7975548,
+      "totalWeightOfCards": 20795
+    },
+    {
+      "mapName": "MapWorldsLavaChamber",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7968742,
+      "totalWeightOfCards": 13989
+    },
+    {
+      "mapName": "MapWorldsSpiderLair",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7970137,
+      "totalWeightOfCards": 15384
+    },
+    {
+      "mapName": "MapWorldsGraveyard",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7995639,
+      "totalWeightOfCards": 40886
+    },
+    {
+      "mapName": "MapWorldsArcade",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7976293,
+      "totalWeightOfCards": 21540
+    },
+    {
+      "mapName": "MapWorldsTemple",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8000017,
+      "totalWeightOfCards": 45264
+    },
+    {
+      "mapName": "MapWorldsAlleyways",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8000932,
+      "totalWeightOfCards": 46179
+    },
+    {
+      "mapName": "MapWorldsOvergrownRuin",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7983253,
+      "totalWeightOfCards": 28500
+    },
+    {
+      "mapName": "MapWorldsVilla",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7989231,
+      "totalWeightOfCards": 34478
+    },
+    {
+      "mapName": "MapWorldsPark",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7962260,
+      "totalWeightOfCards": 7507
+    },
+    {
+      "mapName": "MapWorldsInfestedValley",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7973669,
+      "totalWeightOfCards": 18916
+    },
+    {
+      "mapName": "MapWorldsMesa",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7966584,
+      "totalWeightOfCards": 11831
+    },
+    {
+      "mapName": "MapWorldsPen",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7989241,
+      "totalWeightOfCards": 34488
+    },
+    {
+      "mapName": "MapWorldsShore",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7995372,
+      "totalWeightOfCards": 40619
+    },
+    {
+      "mapName": "MapWorldsScriptorium",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 8065449,
+      "totalWeightOfCards": 110696
+    },
+    {
+      "mapName": "MapWorldsBeach",
+      "totalRegularSingleMapEV": 0,
+      "totalGildedScarabSingleMapEV": 0,
+      "totalSingleMapWeight": 7994110,
+      "totalWeightOfCards": 39357
+    }
+  ]
+]

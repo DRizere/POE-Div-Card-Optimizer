@@ -1,0 +1,424 @@
+[
+  {
+    "poeMapNames": [
+      "MapWorldsPhantasmagoria",
+      "MapWorldsDefiledCathedral",
+      "MapWorldsCemetery",
+      "MapWorldsDrySea",
+      "MapWorldsTower",
+      "MapWorldsArsenal",
+      "MapWorldsShrine",
+      "MapWorldsMaze",
+      "MapWorldsBelfry",
+      "MapWorldsOvergrownShrine",
+      "MapWorldsMausoleum",
+      "MapWorldsWharf"
+    ],
+    "divCardsAndSingleMapEV": {
+      "org.dk.model.DivinationCard@3c5a99da": {
+        "cardName": "Thunderous Skies",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@35851384": {
+        "cardName": "The Coming Storm",
+        "regularEV": 20.483349191246432,
+        "gildedDivScarabEV": 49.16003805899145
+      },
+      "org.dk.model.DivinationCard@4c203ea1": {
+        "cardName": "Lucky Connections",
+        "regularEV": 66.98192197906756,
+        "gildedDivScarabEV": 147.36022835394866
+      },
+      "org.dk.model.DivinationCard@47f37ef1": {
+        "cardName": "Home",
+        "regularEV": 15.413891531874409,
+        "gildedDivScarabEV": 21.579448144624173
+      },
+      "org.dk.model.DivinationCard@649d209a": {
+        "cardName": "Man With Bear",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@7cdbc5d3": {
+        "cardName": "Lingering Remnants",
+        "regularEV": 9.890580399619411,
+        "gildedDivScarabEV": 39.562321598477645
+      },
+      "org.dk.model.DivinationCard@6debcae2": {
+        "cardName": "Vinia\u0027s Token",
+        "regularEV": 104.18934348239772,
+        "gildedDivScarabEV": 187.5408182683159
+      },
+      "org.dk.model.DivinationCard@3ab39c39": {
+        "cardName": "The Witch",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@3834d63f": {
+        "cardName": "The Doctor",
+        "regularEV": 461.91528068506193,
+        "gildedDivScarabEV": 1108.5966736441487
+      },
+      "org.dk.model.DivinationCard@2b80d80f": {
+        "cardName": "Vile Power",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@ea4a92b": {
+        "cardName": "Imperial Legacy",
+        "regularEV": 28.198858230256903,
+        "gildedDivScarabEV": 146.6340627973359
+      },
+      "org.dk.model.DivinationCard@3cb5cdba": {
+        "cardName": "The Surgeon",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@2aafb23c": {
+        "cardName": "The Dragon\u0027s Heart",
+        "regularEV": 4.881065651760228,
+        "gildedDivScarabEV": 14.643196955280686
+      },
+      "org.dk.model.DivinationCard@28864e92": {
+        "cardName": "The Enlightened",
+        "regularEV": 18.88201712654615,
+        "gildedDivScarabEV": 37.7640342530923
+      },
+      "org.dk.model.DivinationCard@6ad5c04e": {
+        "cardName": "The Apothecary",
+        "regularEV": 952.7002664129401,
+        "gildedDivScarabEV": 1714.8604795432923
+      },
+      "org.dk.model.DivinationCard@2f7c7260": {
+        "cardName": "The Artist",
+        "regularEV": 15.75642245480495,
+        "gildedDivScarabEV": 47.26926736441485
+      },
+      "org.dk.model.DivinationCard@47fd17e3": {
+        "cardName": "The Encroaching Darkness",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@7cf10a6f": {
+        "cardName": "Merciless Armament",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@34340fab": {
+        "cardName": "The Incantation",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@6833ce2c": {
+        "cardName": "Lachrymal Necrosis",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@d041cf": {
+        "cardName": "The Sigil",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@19bb089b": {
+        "cardName": "The Tower",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1888ff2c": {
+        "cardName": "Brother\u0027s Gift",
+        "regularEV": 503.98176022835395,
+        "gildedDivScarabEV": 503.98176022835395
+      },
+      "org.dk.model.DivinationCard@2a18f23c": {
+        "cardName": "Acclimatisation",
+        "regularEV": 29.988582302568986,
+        "gildedDivScarabEV": 35.98629876308278
+      },
+      "org.dk.model.DivinationCard@5a39699c": {
+        "cardName": "The Garish Power",
+        "regularEV": 9.462416745956233,
+        "gildedDivScarabEV": 15.139866793529976
+      },
+      "org.dk.model.DivinationCard@7907ec20": {
+        "cardName": "The Oath",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@56cbfb61": {
+        "cardName": "Shard of Fate",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@5a01ccaa": {
+        "cardName": "The Nurse",
+        "regularEV": 494.9143672692674,
+        "gildedDivScarabEV": 1187.794481446242
+      },
+      "org.dk.model.DivinationCard@357246de": {
+        "cardName": "The One With All",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1b40d5f0": {
+        "cardName": "The Tumbleweed",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1b0375b3": {
+        "cardName": "The Dark Mage",
+        "regularEV": 8.648905803996193,
+        "gildedDivScarabEV": 17.297811607992386
+      },
+      "org.dk.model.DivinationCard@2752f6e2": {
+        "cardName": "The Pact",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@28f67ac7": {
+        "cardName": "Struck by Lightning",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@27f674d": {
+        "cardName": "The Old Man",
+        "regularEV": 0.1712654614652712,
+        "gildedDivScarabEV": 0.5480494766888678
+      },
+      "org.dk.model.DivinationCard@1d251891": {
+        "cardName": "The Primordial",
+        "regularEV": 23.352045670789728,
+        "gildedDivScarabEV": 42.03368220742151
+      },
+      "org.dk.model.DivinationCard@7d417077": {
+        "cardName": "The Admirer",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@7e0babb1": {
+        "cardName": "The Thaumaturgist",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@725bef66": {
+        "cardName": "The Life Thief",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@3aa9e816": {
+        "cardName": "The Surveyor",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@2c8d66b2": {
+        "cardName": "The Wrath",
+        "regularEV": 69.26831588962894,
+        "gildedDivScarabEV": 166.24395813510947
+      },
+      "org.dk.model.DivinationCard@5ba23b66": {
+        "cardName": "The Army of Blood",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@546a03af": {
+        "cardName": "The Blazing Fire",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@3f0ee7cb": {
+        "cardName": "The Damned",
+        "regularEV": 1.7725975261655569,
+        "gildedDivScarabEV": 3.5451950523311138
+      },
+      "org.dk.model.DivinationCard@1fbc7afb": {
+        "cardName": "Rats",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@4563e9ab": {
+        "cardName": "Dying Anguish",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1134affc": {
+        "cardName": "Emperor of Purity",
+        "regularEV": 9.806917221693626,
+        "gildedDivScarabEV": 21.575217887725973
+      },
+      "org.dk.model.DivinationCard@721e0f4f": {
+        "cardName": "The Journalist",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@256216b3": {
+        "cardName": "Cursed Words",
+        "regularEV": 28.421503330161755,
+        "gildedDivScarabEV": 96.63311132254998
+      },
+      "org.dk.model.DivinationCard@34033bd0": {
+        "cardName": "The Brawny Battle Mage",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@35bbe5e8": {
+        "cardName": "The Catalyst",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1ae369b7": {
+        "cardName": "The Gambler",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@4ec6a292": {
+        "cardName": "Baited Expectations",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@4cdbe50f": {
+        "cardName": "Jack in the Box",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@6e3c1e69": {
+        "cardName": "Brother\u0027s Stash",
+        "regularEV": 37.067840152235966,
+        "gildedDivScarabEV": 37.067840152235966
+      },
+      "org.dk.model.DivinationCard@2d209079": {
+        "cardName": "No Traces",
+        "regularEV": 24.747859181731688,
+        "gildedDivScarabEV": 64.34443387250239
+      },
+      "org.dk.model.DivinationCard@6fffcba5": {
+        "cardName": "The Tinkerer\u0027s Table",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@66d33a": {
+        "cardName": "The Warlord",
+        "regularEV": 5.274976213130352,
+        "gildedDivScarabEV": 10.549952426260704
+      },
+      "org.dk.model.DivinationCard@45c8e616": {
+        "cardName": "The Patient",
+        "regularEV": 240.11417697431023,
+        "gildedDivScarabEV": 576.2740247383445
+      },
+      "org.dk.model.DivinationCard@7c75222b": {
+        "cardName": "The Rite of Elements",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@11531931": {
+        "cardName": "The Return of the Rat",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@c818063": {
+        "cardName": "The Inventor",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@6bdf28bb": {
+        "cardName": "Might is Right",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@7dc36524": {
+        "cardName": "Unrequited Love",
+        "regularEV": 278.3864414843007,
+        "gildedDivScarabEV": 1113.5457659372028
+      },
+      "org.dk.model.DivinationCard@6ea6d14e": {
+        "cardName": "Seven Years Bad Luck",
+        "regularEV": 445.00872502378695,
+        "gildedDivScarabEV": 1513.0296650808757
+      },
+      "org.dk.model.DivinationCard@129a8472": {
+        "cardName": "Echoes of Love",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@6adca536": {
+        "cardName": "The Union",
+        "regularEV": 90.00000000000001,
+        "gildedDivScarabEV": 198.00000000000006
+      },
+      "org.dk.model.DivinationCard@d7b1517": {
+        "cardName": "A Note in the Wind",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@2aaf7cc2": {
+        "cardName": "The Innocent",
+        "regularEV": 28.618458610846815,
+        "gildedDivScarabEV": 80.13168411037108
+      },
+      "org.dk.model.DivinationCard@6b71769e": {
+        "cardName": "The Journey",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@48140564": {
+        "cardName": "Lantador\u0027s Lost Love",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@17d99928": {
+        "cardName": "The Soul",
+        "regularEV": 6.593720266412941,
+        "gildedDivScarabEV": 17.143672692673647
+      },
+      "org.dk.model.DivinationCard@e580929": {
+        "cardName": "Prosperity",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@5e025e70": {
+        "cardName": "Three Faces in the Dark",
+        "regularEV": 205.5271170313987,
+        "gildedDivScarabEV": 452.15965746907716
+      },
+      "org.dk.model.DivinationCard@71c7db30": {
+        "cardName": "The Stormcaller",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@1cd072a9": {
+        "cardName": "A Stone Perfected",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@23223dd8": {
+        "cardName": "Earth Drinker",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@75bd9247": {
+        "cardName": "The Hive of Knowledge",
+        "regularEV": 0.0,
+        "gildedDivScarabEV": 0.0
+      },
+      "org.dk.model.DivinationCard@2ff4f00f": {
+        "cardName": "The Fiend",
+        "regularEV": 129.91341579448147,
+        "gildedDivScarabEV": 389.7402473834444
+      },
+      "org.dk.model.DivinationCard@2eee9593": {
+        "cardName": "The Hunger",
+        "regularEV": 20.08087535680305,
+        "gildedDivScarabEV": 52.210275927687924
+      },
+      "org.dk.model.DivinationCard@16c0663d": {
+        "cardName": "The Fortunate",
+        "regularEV": 346.17031398667933,
+        "gildedDivScarabEV": 1107.745004757374
+      }
+    },
+    "totalWeightOfCards": 308238,
+    "totalWeight": 8262991,
+    "totalRegularEV": 4718,
+    "totalGildedScarabEV": 11202
+  }
+]

@@ -17,7 +17,7 @@ public class DivCardService {
 
     public static void init(){
         poeMapsStrings.addAll(Objects.requireNonNull(JsonUtils.readListOfStringJson("Input/AllMaps.json")));
-        JsonUtils.readAllDivinationCardsJson("Input/" + Main.CARDS_FILE_NAME);
+        JsonUtils.readAllDivinationCardsJson("Input/" + Main.CARDS_DATA_FILE_NAME);
 
         poeMapsStrings.forEach((mapName) -> {
             PoeMap poeMap = new PoeMap();
@@ -32,9 +32,6 @@ public class DivCardService {
                 if(area.contains("MapWorlds")
                         && minLevel < Main.MAP_LEVEL
                         && maxLevel > Main.MAP_LEVEL){
-                    if(card.getPrice() < Main.CARD_PRICE_FLOOR && !Main.includeCards.contains(card.getName())){
-                        card.setPrice(0);
-                    }
                     poeMaps.get(area).getCards().add(card);
                 }
             });
@@ -105,10 +102,23 @@ public class DivCardService {
         }
     }
 
+    /**
+     * Priority:
+     * Overrides
+     * Keep
+     * Removal
+     * Price Floor
+     */
     public static void overridePriceList(){
+        //Remove cards below the price floor
+        divinationCards.values().forEach((card)->{
+            if(card.getPrice()<Main.CARD_PRICE_FLOOR){
+                card.setPrice(0);
+            }
+        });
         //Remove the included cards from the culling
         Main.excludeCards.removeAll(Main.includeCards);
-        //Cull the bad cards
+        //Cull the bad (mispriced) cards
         Main.excludeCards.forEach((cardName) -> {
             divinationCards.get(cardName).setPrice(0);
         });
@@ -117,5 +127,46 @@ public class DivCardService {
         cardValueOverrides.forEach((cvo) -> {
             divinationCards.get(cvo.getCardName()).setPrice(cvo.getCardValue());
         });
+    }
+
+    public static List<String> findOptimalMapEVWeightBestCards(){
+        //Construct a TreeSet of all the maps ordered by EV/Weight
+        List<String> optimalMapNames = new ArrayList<>();
+        TreeSet<PoeMap> sortedPoeMaps = new TreeSet<>(new PoeMap.ValuePerWeightAndEVComparator());
+        sortedPoeMaps.addAll(poeMaps.values());
+
+        //Iterate through the sorted div cards and add the best map for the best divcard until 12 maps are added.
+        //Also need to track that the card has not already been added.
+        Set<DivinationCard> addedCards = new HashSet<>();
+        int addedMaps = 0;
+        Iterator cardIterator = allDivCardEVInfo.iterator();
+        while(addedMaps<12){
+            CardEVInfo currentCardEVInfo = (CardEVInfo) cardIterator.next();
+            System.out.printf("Looking for map containing: %s\n", currentCardEVInfo.getCardName());
+            if(!addedCards.contains(divinationCards.get(currentCardEVInfo.getCardName()))){
+                //find the best map
+                boolean foundBestMap = false;
+                Iterator mapIterator = sortedPoeMaps.iterator();
+                while(!foundBestMap) {
+                    if(mapIterator.hasNext()){
+                        PoeMap currentMap = (PoeMap) mapIterator.next();
+                        if(Main.atlasMaps.contains(currentMap.getMapName()) && currentMap.getDivCardsAndSingleMapEV().containsKey(currentCardEVInfo.getCardName())){
+                            //Found the best map
+                            foundBestMap = true;
+                            addedMaps++;
+                            optimalMapNames.add(currentMap.getMapName());
+                            currentMap.getDivCardsAndSingleMapEV().keySet().forEach((divCardName)->{
+                                addedCards.add(divinationCards.get(divCardName));
+                            });
+                        }
+                    } else {
+                        System.out.printf("No map found containing: %s\n", currentCardEVInfo.getCardName());
+                        foundBestMap = true;
+                    }
+                }
+            }
+        }
+        JsonUtils.writeObjectToJsonFile(generateMapCombination(optimalMapNames), "Output/OptimalEVWeightMapReport.json");
+        return optimalMapNames;
     }
 }

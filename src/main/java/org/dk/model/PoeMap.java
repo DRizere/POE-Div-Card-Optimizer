@@ -131,11 +131,31 @@ public class PoeMap {
         }
     }
 
+    public static class TotalRawEVComparator implements Comparator<PoeMap> {
+        @Override
+        public int compare(PoeMap item1, PoeMap item2) {
+            // Compare based on totalGildedScarabEV field
+            return -1*Double.compare(item1.getRegularTotalSingleMapEV(), item2.getRegularTotalSingleMapEV());
+        }
+    }
+
     public static class ValuePerWeightComparator implements Comparator<PoeMap> {
         @Override
         public int compare(PoeMap item1, PoeMap item2) {
             // Compare based on totalGildedScarabEV field
             return -1*Double.compare(item1.getGildedScarabTotalSingleMapEV()*item1.cards.size()/item1.getTotalWeightOfCards(), item2.getGildedScarabTotalSingleMapEV()*item2.cards.size()/item2.getTotalWeightOfCards());
+        }
+    }
+
+    public static class ValuePerWeightAndEVComparator implements Comparator<PoeMap> {
+        @Override
+        public int compare(PoeMap item1, PoeMap item2) {
+            // Compare based on totalGildedScarabEV field
+            double EVMultiplier = 1;
+            return -1 * Double.compare(
+                    EVMultiplier*item1.getGildedScarabTotalSingleMapEV() + item1.getGildedScarabTotalSingleMapEV()*item1.cards.size()/item1.getTotalWeightOfCards(),
+                    EVMultiplier*item2.getGildedScarabTotalSingleMapEV() + item2.getGildedScarabTotalSingleMapEV()*item2.cards.size()/item2.getTotalWeightOfCards()
+                    );
         }
     }
 }

@@ -14,10 +14,9 @@ public class Main {
     public static final int INPUT_CARD_PER_MAP = 45;
     public static final int MAP_LEVEL = 83;
     public static final int CARD_PRICE_FLOOR = 6;
-    public static final double MINIMUM_CARD_EV = 34.8;
+    public static final double MINIMUM_CARD_EV = 34.95;
     public static final String CARDS_FILE_NAME = "TOTACards.json";
 
-    static List<String> removedMaps = JsonUtils.readListOfStringJson("Input/RemovedMaps.json");
     static List<String> atlasMaps = JsonUtils.readListOfStringJson("Input/AtlasMaps.json");
     static List<String> excludeCards = JsonUtils.readListOfStringJson("Input/ForceWorthlessCards.json");
     static List<String> includeCards = JsonUtils.readListOfStringJson("Input/ForceGoodCards.json");

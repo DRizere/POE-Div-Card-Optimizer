@@ -59,7 +59,6 @@ public class JsonUtils {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             Gson gson = new Gson();
             String[] jsonArray = gson.fromJson(reader, String[].class);
-            System.out.println("# maps read: " + jsonArray.length);
             return Arrays.asList(jsonArray);
         } catch (IOException e) {
             e.printStackTrace();

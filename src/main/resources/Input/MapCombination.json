@@ -1,14 +1,14 @@
 [
-  "Maze",
-  "DefiledCathedral",
-  "Phantasmagoria",
-  "Shrine",
-  "Cells",
-  "Cemetery",
-  "TropicalIsland",
-  "Arsenal",
-  "Residence",
   "MoonTemple",
+  "LavaLake",
   "OvergrownShrine",
-  "Grotto"
+  "DefiledCathedral",
+  "Cells",
+  "Shrine",
+  "Arsenal",
+  "Lair",
+  "Maze",
+  "Cemetery",
+  "BurialChambers",
+  "Wharf"
 ]

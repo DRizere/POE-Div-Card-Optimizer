@@ -7,7 +7,6 @@ import org.dk.model.PoeMapCombination;
 import org.dk.util.JsonUtils;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class DivCardService {
 
@@ -60,13 +59,13 @@ public class DivCardService {
         JsonUtils.writeListToJsonFile(Collections.singletonList(allMaps), "Output/AllMapReport.json");
     }
 
-    public static Set<String> findMapsWithMinimumEVCard(int minEV){
+    public static Set<String> findMapsWithMinimumEVCard(double minEV){
         Set<String> goodMaps = new HashSet<>();
         poeMapsStrings.forEach((mapName) -> {
             PoeMap poeMap = poeMaps.get(mapName);
             poeMap.getDivCardsAndSingleMapEV().forEach((cardName, cardEVInfo) -> {
                 if(cardEVInfo.getGildedDivScarabEV() > minEV
-                && !mapName.contains("Unique")){
+                && Main.atlasMaps.contains(mapName)){
                     goodMaps.add(mapName.replace("MapWorlds", ""));
                 }
             });
@@ -75,14 +74,23 @@ public class DivCardService {
     }
 
     public static PoeMapCombination generateMapCombination(List<String> mapNames){
-        List<String> fixedMapNames = new ArrayList<>();
-        mapNames.forEach((mapName) -> {
-            fixedMapNames.add("MapWorlds" + mapName);
-        });
-        PoeMapCombination poeMapCombination = new PoeMapCombination();
-        poeMapCombination.setMaps(fixedMapNames);
-        poeMapCombination.calculateEVs();
-        return poeMapCombination;
+        try {
+            List<String> fixedMapNames = new ArrayList<>();
+            mapNames.forEach((mapName) -> {
+                if(mapName.startsWith("MapWorlds")){
+                    fixedMapNames.add(mapName);
+                } else {
+                    fixedMapNames.add("MapWorlds" + mapName);
+                }
+            });
+            PoeMapCombination poeMapCombination = new PoeMapCombination();
+            poeMapCombination.setMaps(fixedMapNames);
+            poeMapCombination.calculateEVs();
+            return poeMapCombination;
+        } catch (Exception e){
+            System.out.println(mapNames);
+            throw e;
+        }
     }
 
     public static void overridePriceList(){
@@ -98,154 +106,4 @@ public class DivCardService {
             divinationCards.get(cvo.getCardName()).setPrice(cvo.getCardValue());
         });
     }
-
-    public static List<String> generateOptimalMapList(){
-        List<String> optimalMaps = new ArrayList<>();
-        HashMap<String, DivinationCard> deepCpyDivinationCards = new HashMap<>();
-        divinationCards.forEach((cardName, divinationCard)->{
-            deepCpyDivinationCards.put(cardName, new DivinationCard(divinationCard));
-        });
-        HashMap<String, PoeMap> deepCpyPoeMaps = new HashMap<>();
-        poeMaps.forEach((mapName, poeMap)->{
-            deepCpyPoeMaps.put(mapName, new PoeMap(poeMap));
-        });
-        int mapsAdded = 0;
-        while(mapsAdded < 12){
-            calculateEVsOfAllMaps(deepCpyPoeMaps, deepCpyDivinationCards);
-            PoeMap poppedEntry = getSortedTreeSetOfPoeMaps(deepCpyPoeMaps).pollFirst();
-            updateDeepCpyZeroedMap(poppedEntry, deepCpyPoeMaps);
-            printCardCountZeroPrice(deepCpyDivinationCards);
-            if(!Main.removedMaps.contains(poppedEntry.getMapName()) && !poppedEntry.getMapName().contains("Unique") && !poppedEntry.getMapName().contains("Uber") && !poppedEntry.getMapName().contains("Harbinger")){
-                optimalMaps.add(poppedEntry.getMapName());
-                mapsAdded++;
-                poppedEntry.getCards().forEach((card)->{
-                    setDivinationCardValueToZero(card.getName(), deepCpyDivinationCards);
-                });
-            }
-        }
-        return optimalMaps;
-    }
-
-    public static void printCardCountZeroPrice(HashMap<String, DivinationCard> dvCards){
-        AtomicInteger count = new AtomicInteger();
-        dvCards.forEach((cardName, card)->{
-            if(card.getPrice()==0){
-                count.getAndIncrement();
-            }
-        });
-    }
-
-    private static void setDivinationCardValueToZero(String cardName, HashMap<String, DivinationCard> dvCards){
-        DivinationCard oldEntry = dvCards.remove(cardName);
-        if(DivCardService.divinationCards.get(cardName).getPrice()<0){
-        } else {
-            oldEntry.setPrice(0);
-        }
-        dvCards.put(cardName, oldEntry);
-    }
-
-    private static void updateDeepCpyZeroedMap(PoeMap zeroedMap, HashMap<String, PoeMap> poeMaps){
-        poeMaps.remove(zeroedMap.getMapName());
-    }
-
-    private static TreeSet<PoeMap> getSortedTreeSetOfPoeMaps(HashMap<String, PoeMap> poeMaps){
-        TreeSet<PoeMap> sortedMapsTarget = new TreeSet<PoeMap>(new PoeMap.TotalGildedScarabEVComparator());
-        poeMaps.forEach((mapName, poeMap)->{
-            sortedMapsTarget.add(poeMap);
-        });
-        return sortedMapsTarget;
-    }
-
-
-
-
-    /*
-    ------------ATTEMPTING DYNAMIC PROGRAMMING----------------
-     */
-
-    /*
-    public static List<String> generateOptimalMapListDP(){
-        List<String> optimalMaps = new ArrayList<>();
-        HashMap<String, DivinationCard> deepCpyDivinationCards = new HashMap<>();
-        divinationCards.forEach((cardName, divinationCard)->{
-            deepCpyDivinationCards.put(cardName, new DivinationCard(divinationCard));
-        });
-        HashMap<String, PoeMap> deepCpyPoeMaps = new HashMap<>();
-        poeMaps.forEach((mapName, poeMap)->{
-            deepCpyPoeMaps.put(mapName, new PoeMap(poeMap));
-        });
-        int mapsAdded = 0;
-        while(mapsAdded < 12){
-            calculateEVsOfAllMaps(deepCpyPoeMaps, deepCpyDivinationCards);
-            PoeMap poppedEntry = getSortedTreeSetOfPoeMaps(deepCpyPoeMaps).pollFirst();
-            updateDeepCpyZeroedMap(poppedEntry, deepCpyPoeMaps);
-            printCardCountZeroPrice(deepCpyDivinationCards);
-            if(!Main.removedMaps.contains(poppedEntry.getMapName()) && !poppedEntry.getMapName().contains("Unique") && !poppedEntry.getMapName().contains("Uber") && !poppedEntry.getMapName().contains("Harbinger")){
-                optimalMaps.add(poppedEntry.getMapName());
-                mapsAdded++;
-                poppedEntry.getCards().forEach((card)->{
-                    setDivinationCardValueToZero(card.getName(), deepCpyDivinationCards);
-                });
-            }
-        }
-        return optimalMaps;
-    }
-
-
-    static Map<String, Integer> kvMap = new HashMap<>();
-    static Map<String, Integer> memoization = new HashMap<>();
-
-    public static int optimizeForMaxValue(List<ObjectWithReferences> objectsWithReferences) {
-        // Initialize kvMap
-        for (ObjectWithReferences obj : objectsWithReferences) {
-            for (String ref : obj.references) {
-                kvMap.put(ref, 0);
-            }
-        }
-
-        // Initialize memoization
-        for (ObjectWithReferences obj : objectsWithReferences) {
-            memoization.put(obj.toString(), -1);
-        }
-
-        return maxUtil(objectsWithReferences, 0, 0);
-    }
-
-    public static int maxUtil(List<ObjectWithReferences> objectsWithReferences, int idx, int valueSoFar) {
-        if (idx == objectsWithReferences.size()) {
-            return valueSoFar;
-        }
-
-        ObjectWithReferences obj = objectsWithReferences.get(idx);
-
-        // Check if we already have the result stored in memoization
-        String state = obj.toString() + ":" + valueSoFar;
-        if (memoization.containsKey(state)) {
-            return memoization.get(state);
-        }
-
-        // Include the current object and update the values of referenced objects
-        int includeCurrent = valueSoFar + obj.value;
-        for (String ref : obj.references) {
-            if (kvMap.containsKey(ref)) {
-                int prevValue = kvMap.get(ref);
-                kvMap.put(ref, Math.max(0, prevValue)); // Ensure non-negative value
-                includeCurrent += prevValue;
-            }
-        }
-
-        // Skip the current object
-        int skipCurrent = maxUtil(objectsWithReferences, idx + 1, valueSoFar);
-
-        // Choose the maximum of including and skipping the current object
-        int maxResult = Math.max(includeCurrent, skipCurrent);
-
-        // Store the result in memoization
-        memoization.put(state, maxResult);
-
-        return maxResult;
-    }
-
-     */
-
 }

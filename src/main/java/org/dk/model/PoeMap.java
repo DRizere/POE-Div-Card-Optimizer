@@ -12,11 +12,8 @@ import static org.dk.Main.INPUT_CARD_PER_MAP;
 public class PoeMap {
     @Expose
     private String mapName;
-
     private List<DivinationCard> cards = new ArrayList<>();
-
     private HashMap<String, CardEVInfo> divCardsAndSingleMapEV = new HashMap<>();
-
     @Expose
     private Set<CardEVInfo> divCardsAndSingleMapEVList = new TreeSet<>(new CardEVInfo.TotalGildedScarabEVComparator());
     @Expose

@@ -8,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-
     public static final String INPUT_CARD = "The Union";
     public static final int INPUT_CARD_PER_MAP = 45;
     public static final int MAP_LEVEL = 83;
@@ -20,11 +19,8 @@ public class Main {
     static List<String> includeCards = JsonUtils.readListOfStringJson("Input/ForceGoodCards.json");
     static List<String> inputMapCombination = JsonUtils.readListOfStringJson("Input/InputMapCombination.json");
     static List<String> inputGoodMaps = JsonUtils.readListOfStringJson("Input/GoodMaps.json");
-
     static PoeMapCombination bestCombination = new PoeMapCombination();
-
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         System.out.printf("There are %s atlas maps.\n", atlasMaps.size());
 
         DivCardService.init();

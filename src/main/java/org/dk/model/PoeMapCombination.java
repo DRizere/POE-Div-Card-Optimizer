@@ -14,8 +14,10 @@ public class PoeMapCombination {
 
     private Set<DivinationCard> cards = new HashSet<>();
 
-    @Expose
+    //@Expose
     private HashMap<DivinationCard, CardEVInfo> divCardsAndSingleMapEV = new HashMap<>();
+    @Expose
+    private TreeSet<CardEVInfo> cardEVInfos = new TreeSet<>(new CardEVInfo.TotalGildedScarabEVComparator());
     @Expose
     private int totalWeightOfCards;
     @Expose
@@ -101,6 +103,7 @@ public class PoeMapCombination {
         });
         this.getGildedScarabTotalEV();
         this.getRegularEV();
+        cardEVInfos.addAll(divCardsAndSingleMapEV.values());
     }
 
     public class TotalGildedScarabEVComparator implements Comparator<PoeMapCombination> {

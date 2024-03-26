@@ -47,7 +47,13 @@ public class CardEVInfo {
         @Override
         public int compare(CardEVInfo item1, CardEVInfo item2) {
             // Compare based on totalGildedScarabEV field
-            return -1*Double.compare(item1.getGildedDivScarabEV(), item2.getGildedDivScarabEV());
+            int firstCompare = -1*Double.compare(item1.getGildedDivScarabEV(), item2.getGildedDivScarabEV());
+            if(firstCompare!=0){
+                return firstCompare;
+            } else {
+                //tiebreak on alphabetical order
+                return item1.getCardName().compareTo(item2.getCardName());
+            }
         }
     }
 }

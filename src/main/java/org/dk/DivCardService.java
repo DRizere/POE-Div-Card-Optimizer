@@ -7,6 +7,7 @@ import org.dk.model.PoeMapCombination;
 import org.dk.util.JsonUtils;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class DivCardService {
 
@@ -53,24 +54,26 @@ public class DivCardService {
             allMaps.add(poeMap);
         });
         allMaps.sort(new PoeMap.TotalGildedScarabEVComparator());
-        allMaps.removeIf((map)-> {
-            return !map.getMapName().contains("MapWorlds") || map.getMapName().contains("Unique");
+        allMaps.removeIf((map) -> {
+            return !Main.atlasMaps.contains(map.getMapName());
         });
-        JsonUtils.writeListToJsonFile(Collections.singletonList(allMaps), "Output/AllMapReport.json");
+
+        System.out.printf("MapReport has %s maps.\n" , allMaps.size());
+        JsonUtils.writeObjectToJsonFile(allMaps, "Output/AllMapReport.json");
     }
 
-    public static Set<String> findMapsWithMinimumEVCard(double minEV){
-        Set<String> goodMaps = new HashSet<>();
+    public static List<String> findMapsWithMinimumEVCard(int minEV){
+        TreeSet<PoeMap> sortedMaps = new TreeSet<>(new PoeMap.TotalGildedScarabEVComparator());
         poeMapsStrings.forEach((mapName) -> {
             PoeMap poeMap = poeMaps.get(mapName);
             poeMap.getDivCardsAndSingleMapEV().forEach((cardName, cardEVInfo) -> {
                 if(cardEVInfo.getGildedDivScarabEV() > minEV
                 && Main.atlasMaps.contains(mapName)){
-                    goodMaps.add(mapName.replace("MapWorlds", ""));
+                    sortedMaps.add(poeMap);
                 }
             });
         });
-        return goodMaps;
+        return sortedMaps.stream().map(PoeMap::getMapName).collect(Collectors.toList());
     }
 
     public static PoeMapCombination generateMapCombination(List<String> mapNames){

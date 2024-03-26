@@ -13,6 +13,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class JsonUtils {
+    public static void writeObjectToJsonFile(Object list, String fileName) {
+        // Create Gson object
+        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().setPrettyPrinting().create();
+
+        try (FileWriter writer = new FileWriter("src/main/resources/" + fileName)) {
+            // Convert list to JSON string
+            String json = gson.toJson(list);
+
+            // Write JSON string to file
+            writer.write(json);
+            System.out.println("Successfully wrote JSON to file: " + fileName);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void writeListToJsonFile(List<Object> list, String fileName) {
         // Create Gson object

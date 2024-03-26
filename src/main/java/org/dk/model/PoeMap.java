@@ -3,10 +3,7 @@ package org.dk.model;
 import com.google.gson.annotations.Expose;
 import org.dk.DivCardService;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.dk.Main.INPUT_CARD;
@@ -20,12 +17,12 @@ public class PoeMap {
 
     private HashMap<String, CardEVInfo> divCardsAndSingleMapEV = new HashMap<>();
 
-    //@Expose
-    private List<CardEVInfo> divCardsAndSingleMapEVList = new ArrayList<>();
     @Expose
-    private int totalRegularSingleMapEV;
+    private Set<CardEVInfo> divCardsAndSingleMapEVList = new TreeSet<>(new CardEVInfo.TotalGildedScarabEVComparator());
     @Expose
-    private int totalGildedScarabSingleMapEV;
+    private double totalRegularSingleMapEV;
+    @Expose
+    private double totalGildedScarabSingleMapEV;
     @Expose
     private int totalSingleMapWeight;
     @Expose
@@ -63,18 +60,20 @@ public class PoeMap {
 
     public double getRegularTotalSingleMapEV() {
         AtomicReference<Double> totalRegularSingleMapEV = new AtomicReference<>((double) 0);
-        divCardsAndSingleMapEV.forEach((dc, evInfo) -> {
+        divCardsAndSingleMapEV.values().forEach((evInfo) -> {
             totalRegularSingleMapEV.updateAndGet(v -> v + evInfo.getRegularEV());
         });
+        this.totalRegularSingleMapEV = totalRegularSingleMapEV.get();
         return totalRegularSingleMapEV.get();
     }
 
 
     public double getGildedScarabTotalSingleMapEV() {
         AtomicReference<Double> totalGildedScarabSingleMapEV = new AtomicReference<>((double) 0);
-        divCardsAndSingleMapEV.forEach((dc, evInfo) -> {
+        divCardsAndSingleMapEV.values().forEach((evInfo) -> {
             totalGildedScarabSingleMapEV.updateAndGet(v -> v + evInfo.getGildedDivScarabEV());
         });
+        this.totalGildedScarabSingleMapEV = totalGildedScarabSingleMapEV.get();
         return totalGildedScarabSingleMapEV.get();
     }
 
@@ -119,11 +118,9 @@ public class PoeMap {
             cardEVInfo.setGildedDivScarabEV((thisCard.getPrice() * numberOfThisCardDropped) + (thisCard.getPrice() * (thisCard.getStack()-1)*0.2));
             divCardsAndSingleMapEV.put(thisCard.getName(), cardEVInfo);
         });
+        divCardsAndSingleMapEVList.addAll(divCardsAndSingleMapEV.values());
         this.getGildedScarabTotalSingleMapEV();
         this.getRegularTotalSingleMapEV();
-        divCardsAndSingleMapEV.forEach((cardName, cardEvInfo) -> {
-            divCardsAndSingleMapEVList.add(cardEvInfo);
-        });
     }
 
     public static class TotalGildedScarabEVComparator implements Comparator<PoeMap> {

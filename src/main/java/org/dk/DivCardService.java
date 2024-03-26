@@ -1,9 +1,6 @@
 package org.dk;
 
-import org.dk.model.CardValueOverride;
-import org.dk.model.DivinationCard;
-import org.dk.model.PoeMap;
-import org.dk.model.PoeMapCombination;
+import org.dk.model.*;
 import org.dk.util.JsonUtils;
 
 import java.util.*;
@@ -15,6 +12,8 @@ public class DivCardService {
     public static HashMap<String, DivinationCard> divinationCards = new HashMap<>();
     public static HashMap<String, PoeMap> poeMaps = new HashMap<>();
     static Set<String> poeMapsStrings = new HashSet<>();
+
+    static TreeSet<CardEVInfo> allDivCardEVInfo = new TreeSet<>(new CardEVInfo.TotalGildedScarabEVComparator());
 
     public static void init(){
         poeMapsStrings.addAll(Objects.requireNonNull(JsonUtils.readListOfStringJson("Input/AllMaps.json")));
@@ -46,6 +45,16 @@ public class DivCardService {
         poeMaps.forEach((mapName, poeMap) -> {
             poeMap.calculateEVs(divinationCards);
         });
+    }
+
+    public static void compileAllDivCardEVInfoTS(){
+        poeMaps.values().forEach((map)->{
+            allDivCardEVInfo.addAll(map.getDivCardsAndSingleMapEV().values());
+        });
+    }
+
+    public static void writeDivCardEVReport(){
+        JsonUtils.writeObjectToJsonFile(allDivCardEVInfo, "Output/AllDivCardEVReport.json");
     }
 
     public static void writeMapReport(){

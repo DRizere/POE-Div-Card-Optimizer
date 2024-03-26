@@ -47,7 +47,9 @@ public class CardEVInfo {
         @Override
         public int compare(CardEVInfo item1, CardEVInfo item2) {
             // Compare based on totalGildedScarabEV field
-            int firstCompare = -1*Double.compare(item1.getGildedDivScarabEV(), item2.getGildedDivScarabEV());
+            int firstCompare = -1*Double.compare(
+                    (int) (item1.getGildedDivScarabEV()),
+                    (int) (item2.getGildedDivScarabEV()));
             if(firstCompare!=0){
                 return firstCompare;
             } else {

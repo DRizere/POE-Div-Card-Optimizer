@@ -13,7 +13,7 @@ public class Main {
     public static final int INPUT_CARD_PER_MAP = 45;
     public static final int MAP_LEVEL = 83;
     public static final int CARD_PRICE_FLOOR = 6;
-    public static final int MINIMUM_CARD_EV = 500;
+    public static final int MINIMUM_CARD_EV = 100;
     public static final String CARDS_FILE_NAME = "TOTACardsData.json";
     static List<String> atlasMaps = JsonUtils.readListOfStringJson("Input/AtlasMaps.json");
     static List<String> excludeCards = JsonUtils.readListOfStringJson("Input/ForceWorthlessCards.json");
@@ -29,7 +29,11 @@ public class Main {
 
         DivCardService.init();
         DivCardService.overridePriceList();
+
         DivCardService.calculateEVsOfAllMaps(DivCardService.poeMaps, DivCardService.divinationCards);
+        DivCardService.compileAllDivCardEVInfoTS();
+
+        DivCardService.writeDivCardEVReport();
         DivCardService.writeMapReport();
 
         //Test the given input Map combination
@@ -55,7 +59,7 @@ public class Main {
             JsonUtils.writeListToJsonFile(Collections.singletonList(bestCombination), "Output/TheBestPermutation" + MINIMUM_CARD_EV + ".json");
         }
         double endTime = System.currentTimeMillis();
-        System.out.printf("Time to process %s combinations: %s", Math.pow(2, goodMaps.size()), (endTime-startTime)/1000);
+        System.out.printf("Time to process %s combinations: %sms", Math.pow(2, goodMaps.size()), (endTime-startTime));
     }
 
     public static void processCombination(List<String> currentCombination){

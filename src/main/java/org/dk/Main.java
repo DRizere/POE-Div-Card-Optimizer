@@ -82,7 +82,7 @@ public class Main {
     public static void processCombination(List<String> currentCombination){
         PoeMapCombination currentPerm = DivCardService.generateMapCombination(currentCombination);
         if(bestCombination.getGildedScarabTotalEV() < currentPerm.getGildedScarabTotalEV()) {
-            System.out.println("Found new better permString: " + currentCombination);
+            //System.out.println("Found new better permString: " + currentCombination);
             bestCombination = currentPerm;
         }
     }

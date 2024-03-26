@@ -142,7 +142,7 @@ public class DivCardService {
         Iterator cardIterator = allDivCardEVInfo.iterator();
         while(addedMaps<12){
             CardEVInfo currentCardEVInfo = (CardEVInfo) cardIterator.next();
-            System.out.printf("Looking for map containing: %s\n", currentCardEVInfo.getCardName());
+            //System.out.printf("Looking for map containing: %s\n", currentCardEVInfo.getCardName());
             if(!addedCards.contains(divinationCards.get(currentCardEVInfo.getCardName()))){
                 //find the best map
                 boolean foundBestMap = false;
@@ -160,7 +160,7 @@ public class DivCardService {
                             });
                         }
                     } else {
-                        System.out.printf("No map found containing: %s\n", currentCardEVInfo.getCardName());
+                        //System.out.printf("No map found containing: %s\n", currentCardEVInfo.getCardName());
                         foundBestMap = true;
                     }
                 }

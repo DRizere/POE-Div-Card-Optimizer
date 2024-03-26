@@ -166,7 +166,7 @@ public class DivCardService {
                 }
             }
         }
-        JsonUtils.writeObjectToJsonFile(generateMapCombination(optimalMapNames), "Output/OptimalEVWeightMapReport.json");
+        JsonUtils.writeObjectToJsonFile(generateMapCombination(optimalMapNames), "Output/GreedyAttemptFindBestMapCombination.json");
         return optimalMapNames;
     }
 }

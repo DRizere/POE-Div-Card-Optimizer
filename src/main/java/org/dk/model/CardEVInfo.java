@@ -2,6 +2,8 @@ package org.dk.model;
 
 import com.google.gson.annotations.Expose;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Comparator;
 
 public class CardEVInfo {
@@ -47,9 +49,19 @@ public class CardEVInfo {
         @Override
         public int compare(CardEVInfo item1, CardEVInfo item2) {
             // Compare based on totalGildedScarabEV field
+            int decimalPlaces = 3; // Number of decimal places to keep
+
+            // Create BigDecimal object from double
+            BigDecimal bdFirst = BigDecimal.valueOf(item1.getGildedDivScarabEV());
+            BigDecimal bdSecond = BigDecimal.valueOf(item2.getGildedDivScarabEV());
+
+            // Round the number
+            bdFirst = bdFirst.setScale(decimalPlaces, RoundingMode.HALF_UP);
+            bdSecond = bdSecond.setScale(decimalPlaces, RoundingMode.HALF_UP);
+
             int firstCompare = -1*Double.compare(
-                    (int) (item1.getGildedDivScarabEV()),
-                    (int) (item2.getGildedDivScarabEV()));
+                    bdFirst.doubleValue(),
+                    bdSecond.doubleValue());
             if(firstCompare!=0){
                 return firstCompare;
             } else {
@@ -59,3 +71,4 @@ public class CardEVInfo {
         }
     }
 }
+

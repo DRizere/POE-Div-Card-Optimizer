@@ -14,7 +14,7 @@ public class Main {
     public static final int MAP_LEVEL = 83;
     public static final int CARD_PRICE_FLOOR = 6;
     public static final int MINIMUM_CARD_EV = 100;
-    public static final String CARDS_FILE_NAME = "TOTACardsData.json";
+    public static final String CARDS_DATA_FILE_NAME = "TOTACardsData.json";
     static List<String> atlasMaps = JsonUtils.readListOfStringJson("Input/AtlasMaps.json");
     static List<String> excludeCards = JsonUtils.readListOfStringJson("Input/ForceWorthlessCards.json");
     static List<String> includeCards = JsonUtils.readListOfStringJson("Input/ForceGoodCards.json");
@@ -36,11 +36,32 @@ public class Main {
         DivCardService.writeDivCardEVReport();
         DivCardService.writeMapReport();
 
+        DivCardService.findOptimalMapEVWeightBestCards();
+
         //Test the given input Map combination
         JsonUtils.writeObjectToJsonFile(DivCardService.generateMapCombination(inputMapCombination),
                 "Output/SingleMapComboReport.json");
 
+        reportOnInputMapPool();
+        //generateAndReportOnMinEVMaps();
+    }
 
+    private static void reportOnInputMapPool(){
+        //Write out all the permutations of the "good maps"
+        System.out.println("Considering # maps: " + inputGoodMaps.size());
+        System.out.println("Will result in # combinations: " + Math.pow(2, inputGoodMaps.size()));
+        double startTime = System.currentTimeMillis();
+        if(inputGoodMaps.size()<30){
+            bestCombination.setTotalGildedScarabEV(0);
+            generateCombinations(inputGoodMaps, 12);
+
+            JsonUtils.writeObjectToJsonFile(bestCombination, "Output/TheBestPermutationBasedOnInputMaps.json");
+        }
+        double endTime = System.currentTimeMillis();
+        System.out.printf("Time to process %s combinations: %sms", Math.pow(2, inputGoodMaps.size()), (endTime-startTime));
+    }
+
+    private static void generateAndReportOnMinEVMaps(){
         //Find maps with a card with a minimum EV
         List<String> goodMaps = DivCardService.findMapsWithMinimumEVCard(MINIMUM_CARD_EV);
         JsonUtils.writeListOfStringToJson(
